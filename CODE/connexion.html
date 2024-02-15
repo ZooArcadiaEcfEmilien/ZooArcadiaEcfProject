@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ZooArcadia.css" />
+    <!--Style Mobile First-->
+    <link rel="stylesheet" href= "MobileFirst/ConnexionMobile.css" />
+
     <title>Document</title>
 </head>
 <body>
-   
-    <nav>
-        <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/ZooArcadia.html">Accueil</a>
-        <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/ServicesHTML.html">Services</a>
-        <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/habitats.html">Les habitats</a>
-        <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/contact.html">Contact</a>
-        <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/connexion.html">Connexion</a>
-    </nav>
-    <h1>ACCES AU PERSONNEL ET SALARIE : ONGLET DE CONNEXION</h1>
+  <div class="banderolePub element-a-cacher">Offre promotionnelle : 1 place adulte acheté = 1 place enfant offerte* ! </div>
+  <div class = "menuTitreMobile">
+  <button class="menu-btn">Menu</button>
+  <div class="nav-container">
+      <nav class="nav-menu">
+      <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/ZooArcadia.html">Accueil</a>
+      <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/ServicesHTML.html">Services</a>
+      <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/habitats.html">Les habitats</a>
+      <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/contact.html">Contact</a>
+      <a href="/Users/duplaquet/Documents/GitHub/ZooArcadiaEcfProject/CODE/connexion.html">Connexion</a>
+  </nav>
+  </div>
+  <h1></h1></div>
+
+    <div class="login-container">
+        <form class="login-form" action="/login" method="post">
+          <h2>Connexion</h2>
+          <div class="form-group">
+            <label for="username">Nom de compte :</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Se connecter</button>
+          <div class="forgot-password">
+            <a href="#">Mot de passe oublié ?</a>
+          </div>
+        </form>
+      </div>
+      
     <footer>
         <div class="footer-links">
             <a href="#">Conditions Générales de Vente</a>

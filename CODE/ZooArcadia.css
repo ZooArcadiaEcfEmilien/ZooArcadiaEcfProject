@@ -1,5 +1,22 @@
 
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Styles pour les écrans de taille moyenne (tablettes) */
+    body {
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(74, 114, 40);
+        color: white;
+        background-image: url(fond.jpeg);
+        background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble de l'élément */
+        background-position: center; /* Centre l'image */
+        /*background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    }
+}
 
+@media only screen and (min-width: 901px) {
+    /* Styles pour les écrans plus larges (ordinateurs de bureau, ordinateurs portables) */
 body {
     height: 100vh;
     font-family: Arial, sans-serif;
@@ -19,22 +36,12 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.carousel {
-    width: 100%; 
-    margin: 0 auto; 
-    overflow: hidden;
-    white-space: nowrap;
+.carrousselImageAccueil{
+    width: 75vh;
+    height: 50vh;
+    border: solid 1px black;
+    margin: 0 auto;
 }
-
-.carousel img {
-    width: 100%; 
-    display: inline-block;
-}
-
-
-
-
-
 nav {
     display: flex;
     background-color: rgba(54, 85, 28, 0.693);
@@ -50,9 +57,10 @@ nav a {
     padding: 10px; 
 }
 
-h1, .introduction, .horairesOuverture {
+h1, .introduction, .horairesOuverture ::before{
     text-align: center;
     margin: 20px 0; 
+    content: " Bienvenu au Zoo Arcadia ! ";
 }
 
 footer {
@@ -127,7 +135,9 @@ footer {
 .habitatSpe img {
     height: -webkit-fill-available;
 }
-
+.menu-btn {
+    display: none;
+}
 /* FORMULAIRE CONTACT */
 form {
     max-width: 40%;
@@ -184,3 +194,4 @@ form {
     width: 50%;
     margin: 1%;
   }
+}
