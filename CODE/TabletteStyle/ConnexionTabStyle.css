@@ -1,4 +1,5 @@
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
     /* Styles pour les écrans de petite taille (mobiles) */
 
     .element-a-cacher {
@@ -12,19 +13,19 @@
     }
           
     .menu-btn {
-        display: block;
+        display: flex;
         background-color: #07522F;
 
         border: none;
         border-radius: 5px;
         width: 17%;
+        align-items: center;
+        justify-content: center;
         color: white;
         font-family: fantasy;
         font-size: 100%;
+
     }
-    .menu-btn:hover{
-        background-color: #309f50;
-    } 
           
     .nav-menu {
         display: none;
@@ -38,6 +39,9 @@
         background-color: #07522F;
 
     }
+        .menu-btn:hover{
+        background-color: #309f50;
+    } 
           
     .nav-menu a {
         display: block;
@@ -59,12 +63,6 @@
     h1 {
         margin-left: 13%;
     }
-    h2::before{
-        content: "Formulaire de contact";
-    }
-    h2{
-        text-align: center;
-    }
     .carrousselImageAccueil{
         width: 80%;
         height: 35%;
@@ -78,40 +76,61 @@
         background-color: #0000007a;
     }
     .footer-links a{
+      color: white;
+  }
+          /*Formulaire de connexion*/
+    .login-container {
+        width: 90%;
+
+        margin: 5%;
+    }
+    
+    .form-group {
+        margin-bottom: 5%;
+      }
+    .login-form{
+        background-color: darkgreen;
+        padding: 3%;
+        border-radius: 3%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+    button{
+        background-color: rgb(15, 62, 14);
+        width: 100%;
+        padding: 5%;
+        color: #fff;
+        border: none;
+        border-radius: 3%;
+        cursor: pointer;
+    }
+    .forgot-password a{
         color: white;
-    }
-
-    /*FORMULAIRE DE CONTACT*/
-    form{
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(0, 61, 25, 0.67);
-        margin: 3%;
-        padding-bottom: 5%;
+        margin-top: 2%;
+        text-decoration: none;
 
     }
-    .label2{
-        display: flex;
-        flex-direction: column;
-    }
-    form label{
-        margin: 2% auto;
+    .forgot-password{
+        margin-top: 5%;
+        text-align: center;
 
     }
-    form textarea{
-        width: 80%;
-        margin: 0 auto;
-        height: 23vh;
-    }
-    form input{
-        height: 3vh;
-        width: 80%;
-        margin: 0 auto;
-    }
-    form button{
-        margin: 0 auto;
-        margin-top: 3vh;
-        height: 5vh;
-        width: 50%;
-    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 3%;
+      }
+      input[type="text"], input[type="password"] {
+        width: 95%;
+        padding: 2%;
+        border: 1px solid #ccc;
+        border-radius: 3%;
+        
+      }
+      button:hover {
+        background-color: #309f50;
+      }
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
 }

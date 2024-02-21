@@ -1,13 +1,11 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
     /* Styles pour les écrans de petite taille (mobiles) */
 
     .element-a-cacher {
         display: none;
     }
-    
     .introduction{
         text-align: center;
-        background-color: rgb(0, 61, 25, 0.67);
     }
     .nav-container {
         text-align: center;
@@ -16,29 +14,29 @@
     .menu-btn {
         display: block;
         background-color: #07522F;
+
         border: none;
         border-radius: 5px;
         width: 17%;
         color: white;
-        color: white;
         font-family: fantasy;
         font-size: 100%;
-
-
-    }
-          
-    .nav-menu {
-        display: none;
     }
     .menu-btn:hover{
         background-color: #309f50;
     } 
+          
+    .nav-menu {
+        display: none;
+    }
+          
     .nav-menu.active {
         display: block;
         position: absolute;
         top: 10vh;
         left: 0;
         background-color: #07522F;
+
     }
           
     .nav-menu a {
@@ -46,6 +44,7 @@
         padding: 10px;
         text-decoration: none;
         color: #ffffff;
+
         font-weight: bold;
     }
     h1::before{
@@ -55,9 +54,16 @@
         display: flex;
         background-color: #07522F;
         height: 10vh;
+
     }
     h1 {
         margin-left: 13%;
+    }
+    h2::before{
+        content: "Formulaire de contact";
+    }
+    h2{
+        text-align: center;
     }
     .carrousselImageAccueil{
         width: 80%;
@@ -65,26 +71,47 @@
         border: solid 1px black;
         margin: 2vh auto;
     }
-    .horairesOuverture{
-        text-align: center;
-        position: relative;
-        background-color: rgb(0, 61, 25, 0.67);
-
-    }
     footer{
         text-align: center;
-        position: relative;
-        bottom: 0;
+        position: absolute;
+        bottom: 0px;
         background-color: #0000007a;
     }
     .footer-links a{
         color: white;
     }
-    .CustomerReviews{
-        width: 80%;
-        height: 35%;
-        border: solid 1px black;
-        margin: 2vh auto;
+
+    /*FORMULAIRE DE CONTACT*/
+    form{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 61, 25, 0.67);
+        margin: 3%;
+        padding-bottom: 5%;
+
     }
-          
+    .label2{
+        display: flex;
+        flex-direction: column;
+    }
+    form label{
+        margin: 2% auto;
+
+    }
+    form textarea{
+        width: 80%;
+        margin: 0 auto;
+        height: 23vh;
+    }
+    form input{
+        height: 3vh;
+        width: 80%;
+        margin: 0 auto;
+    }
+    form button{
+        margin: 0 auto;
+        margin-top: 3vh;
+        height: 5vh;
+        width: 50%;
+    }
 }
