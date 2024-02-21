@@ -1,18 +1,6 @@
 @media only screen and (max-width: 600px) {
     /* Styles pour les écrans de petite taille (mobiles) */
-    body {
-        height: 100vh;
-        font-family: Arial, sans-serif;
-        margin: 0;
 
-
-        background-color: rgb(74, 114, 40);
-        color: white;
-        background-image: url(fond.jpeg);
-        background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble de l'élément */
-        background-position: center; /* Centre l'image */
-        /*background-repeat: no-repeat; /* Empêche la répétition de l'image */        
-    }
     h2{
         text-align: center;
     }
@@ -33,10 +21,13 @@
         border: none;
         border-radius: 5px;
         width: 17%;
-      
-
-
+        color: white;
+        font-family: fantasy;
+        font-size: 100%;
     }
+    .menu-btn:hover{
+        background-color: #309f50;
+    } 
           
     .nav-menu {
         display: none;
@@ -45,16 +36,18 @@
     .nav-menu.active {
         display: block;
         position: absolute;
-        top: 10%;
+        top: 10vh;
         left: 0;
-        background-color: burlywood;
+        background-color: #07522F;
+
     }
           
     .nav-menu a {
         display: block;
         padding: 10px;
         text-decoration: none;
-        color: #333;
+        color: #ffffff;
+
         font-weight: bold;
     }
     h1::before{
@@ -63,6 +56,7 @@
     .menuTitreMobile{
         display: flex;
         background-color: #07522F;
+        height: 10vh;
 
     }
     h1 {
@@ -81,6 +75,10 @@
     }
     footer{
         text-align: center;
+        background-color: #0000007a;
+    }
+    .footer-links a{
+        color: white;
     }
 
     /* 4 services */
@@ -94,6 +92,9 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
+        margin-bottom: 10%;
+        background-color: rgb(0, 61, 25, 0.67);
+        padding-top: 5%;
     }
     .service{
         display: flex;
