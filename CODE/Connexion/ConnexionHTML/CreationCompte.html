@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href ="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionCSS/Main.css"/>
+    <link rel ="stylesheet" href ="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionCSS/CreationCompte.css"/>
+    <title>ZooArcadiaCreationDeCompte</title>
+</head>
+<body>
+    <ul class="action-list">
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/CreationCompte.html">Créer un compte</a></li>
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/ServicesCompte.html">Services</a></li>
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/HabitatsCompte.html">Habitats</a></li>
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/HorairesCompte.html">Horaires</a></li>
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/AnimauxCompte.html">Animaux</a></li>
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/Statistiques.html">Statistiques</a></li>
+        <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/AvisCompte.html">Les avis</a></li>
+      </ul>
+        <div class="Main-Container">
+        <div class="TextExplicatifCreationCompte">Veuillez entrer les différents champs requis dans leur intégralité un mail récapitulatif vous sera envoyé</div>
+        <div class="Child-Container">
+            <div class="login-container">
+                <form class="login-form" action="/login" method="post">
+                  <h2>Création d'un compte</h2>
+                  <div class="form-group">
+                    <label for="username">Nom de compte :</label>
+                    <input type="text" id="username" name="username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="mail">Adresse mail :</label>
+                    <input type="mail" id="password" name="mail" required>
+                  </div>
+                  <div class="ChoixTypeUserCreation">
+                    <label for="choix">Type de compte :</label>
+                    <select id="choix" name="choix">
+                      <option value="option1">Créer un compte employé</option>
+                      <option value="option2">Créer un compte vétérinaire</option>
+                    </select>
+                  </div>
+                  <button type="submit">Créer le compte</button>
+                </form>
+              </div>
+        </div>
+        
+    </div>
+</body>
+</html>

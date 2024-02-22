@@ -1,0 +1,66 @@
+.Main-Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1%;
+    color: black;
+    align-items: center;
+}
+.TableauOuverture{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.TableauHoraire{
+    background-color: white;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.TableauOuverture p{
+    width: 15%;
+} 
+.Fermeture{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.Fermeture input{
+    width: 15%;
+    height: 50%;
+    margin-right: 3%;
+
+}
+.Ouverture{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  
+
+}
+.Fermeture p{
+    width: 15%;
+}
+.Ouverture p{
+    width: 15%;
+}
+.Ouverture input{
+    width: 15%;
+    height: 50%;
+    margin-right: 3%;
+
+}
+
+
+.ButtonModifHoraires{
+    margin: 1%;
+}

@@ -1,0 +1,14 @@
+.Main-Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1%;
+    color: black;
+    align-items: center;
+}
+.ChoixAnimaux{
+    width: 40%;
+    height: 20%;
+    background-color: white;
+}

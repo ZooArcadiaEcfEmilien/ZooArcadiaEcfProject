@@ -1,0 +1,54 @@
+.Restauration-container{
+    width: 20%;
+    background-color: white;
+    border: solid gray 1px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+}
+.VisiteHabitats-Container{
+    width: 20%;
+    background-color: white;
+    border: solid gray 1px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+
+}
+.PetitTrain-Container{
+    width: 20%;
+    background-color: white;
+    border: solid gray 1px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+
+}
+.Main-Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1%;
+    color: black;
+    align-items: center;
+
+}
+.VariableContainer{
+    width: 80%;
+    height: 60%;
+    background-color: white;
+}
+.ChoixContainer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
