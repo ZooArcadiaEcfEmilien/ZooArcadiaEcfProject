@@ -25,23 +25,24 @@ nav a {
     padding: 10px; 
 }
 
-h1, .introduction, .horairesOuverture ::before{
-    text-align: center;
-    margin: 20px 0; 
-    content: " Bienvenu au Zoo Arcadia ! ";
+h1::before {
+    content: " Nos services ";
 }
+h1{
+    text-align: center;
 
+}
+h3{
+    margin: 0%;
+}
 footer {
     background-color: #333;
     color: white;
     padding: 1%;
     text-align: center;
-    bottom: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 2%;
- 
-
 }
 .footer-links {
     display: flex;
@@ -60,11 +61,11 @@ footer {
 
 .service {
     display: flex;
-    justify-content: center;
-    height: 70%;
+    justify-content: space-evenly;
+    height: 90%;
+    margin-bottom: 2%;
 }
 .serviceSize {
-    margin : 2%;
     width: 30%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.38);
@@ -73,11 +74,22 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 .serviceSize img {
-    width: -webkit-fill-available;
+    height: 95%;
+    margin-bottom: 2%;
+    width: auto;
+}
+.BtnService{
+    width: 50%;
+}
+.imgClic{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
     height: 40%;
-    margin: inherit;
-    
+    justify-content: center;
 }
 }

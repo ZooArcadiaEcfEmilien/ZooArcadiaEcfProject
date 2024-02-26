@@ -2,13 +2,65 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 1%;
     color: black;
     align-items: center;
 }
 .ChoixAnimaux{
-    width: 40%;
-    height: 20%;
-    background-color: white;
+
+}
+.ChoixAnimaux2{
+
+}
+.select-container{
+    background-color: wheat;
+    width: 30%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-search{
+    width: 95%;
+    height: 80%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.stat1,
+.stat2{
+    width: 48%;
+    height: 95%;
+    background-color: antiquewhite;
+}
+.mainStat img{
+    background-color: black;
+    width: 20%;
+    height: 80%;
+    position: relative;
+}
+.mainStat{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    width: 100%;
+    height: 25%;
+    justify-content: start;
+    align-items: center;
+}
+.stat2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-stat2{
+    text-align: center;
+}
+.stat2 input{
+    width: 90%;
+    height: 80%;
 }
