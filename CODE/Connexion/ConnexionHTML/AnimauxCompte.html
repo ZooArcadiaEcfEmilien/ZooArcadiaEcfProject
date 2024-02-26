@@ -19,6 +19,7 @@
         <li><a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/Connexion/ConnexionHTML/AvisCompte.html">Les avis</a></li>
       </ul>
     <div class="Main-Container">
+      <div class="select-container">
         <div class="ChoixAnimaux">
             <label for="choix">Type d'habitat :</label>
             <select id="choix" name="choix">
@@ -28,7 +29,35 @@
               <option value="option2">Toundra</option>
             </select>
           </div>
-    </div>
+          <div class="ChoixAnimaux2">
+            <label for="choix">Choix de l'animal :</label>
+            <select id="choix" name="choix">
+              <option value="option1">Animal1</option>
+              <option value="option2">Animal2</option>
+              <option value="option2">Animal3</option>
+              <option value="option2">Animal4</option>
+            </select>
+          </div>
+      </div>
+      <div class="main-search">
+        <div class="stat1">
+          <div class="mainStat">
+            <img src="" alt="ImageDeLAnimal"> 
+            <div class="main-stat2">
+              <p>Nom de l'animal & Race</p>
+              <p>Age</p>
+              <p>Etat Général "en forme" vérifié le JJ/MM/AA</p>
+              <p>Dernier repas pris le JJ/MM/AA à 00H00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat2">
+          <h3>Compte rendu</h3>
+          <input type="text" id="compteRendu" name="compteRendu">
+          <button type="submit">Valider les modifications</button>
+        </div>
+      </div>
     </div>
 </body>
 </html>
