@@ -1,4 +1,5 @@
 <?php
+                                                    //------------------------CLASS ANIMAL------------------------//
 class Animal {
     public $name;
     public $race;
@@ -11,6 +12,7 @@ class Animal {
         $this->habitat = in_array($habitat, ['Savane Africaine', 'Forêt Tropicale', 'Aquarium Marin', 'Toundra Arctique']) ? $habitat : "Inconnu";
     }
 
+    // -----AJOUT ANIMAL-----//
     public static function createAndAddToListAnimal($name, $race, $habitat, &$animalList) {
         $animal = new Animal($name, $race, $habitat);
         $animalList[] = $animal;
@@ -18,10 +20,20 @@ class Animal {
         return $animal;
     }
 
-    public static function deleteAnimal($name, $race, $habitat, &$animalList) {
-        // Implémentez ici la logique pour supprimer un animal de la liste
+    // -----SUPPRIMER ANIMAL -----//
+    public static function deleteAnimal($name, &$animalList) {
+        foreach ($animalList as $key => $animal) {
+            if ($animal->name === $name) {
+                unset($animalList[$key]);
+                echo 'Animal supprimé avec succès';
+                return true; 
+            }
+        }
+        echo 'Animal non trouvé dans la liste';
+        return false; 
     }
 }
+                                                    //------------------------CLASS SUI ANIMAL------------------------//
 
 class SuiviAnimal {
     public $etatSante;
@@ -47,6 +59,7 @@ $animalList = [];
 // Création d'animal et ajout à la liste d'animaux
 $simba = Animal::createAndAddToListAnimal("Simba", "Lion", "Savane Africaine", $animalList);
 $perroquet = Animal::createAndAddToListAnimal("Perroquet", "Oiseaux", "Forêt Tropicale", $animalList);
+
 // Création d'un SuiviAnimal pour Simba
 $suiviSimba = new SuiviAnimal("Correct", "viande", "2Kg", "10/10/24 10h10", "en bonne santé générale", 10);
 $simba->suiviAnimal = $suiviSimba;
@@ -60,4 +73,5 @@ echo "Nourriture favorite de Simba : " . $simba->suiviAnimal->nourritureFavorite
 
 // Affichage de la liste d'animaux (pour le test)
 print_r($animalList);
-?>
+
+
