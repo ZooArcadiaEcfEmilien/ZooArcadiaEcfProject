@@ -6,7 +6,7 @@
                     <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/ZooArcadia.html">Accueil</a>
                     <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/ServicesHTML.html">Services</a>
                     <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/habitats.html">Les habitats</a>
-                    <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/contact.html">Contact</a>
+                    <a href="/Formulaire/formulaire.php">Contact</a>
                     <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/connexion.html">Connexion</a>
                 </nav>
             </div>
