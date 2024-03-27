@@ -3,12 +3,10 @@
         <button class="menu-btn">Menu</button>
             <div class="nav-container">
                 <nav class="nav-menu">
-                    <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/ZooArcadia.html">Accueil</a>
-                    <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/ServicesHTML.html">Services</a>
-                    <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/habitats.html">Les habitats</a>
-                    <a href="/Formulaire/formulaire.php">Contact</a>
-                    <a href="/Users/duplaquet/Documents/ZooArcadiaEcfProject/CODE/connexion.html">Connexion</a>
+                    <a href="/ZooArcadiaEcfProject/CODE/ZooArcadia.php">Accueil</a>
+                    <a href="/ZooArcadiaEcfProject/CODE/Services.php">Services</a>      <!-- lien ok -->
+                    <a href="/ZooArcadiaEcfProject/CODE/habitats.php">Les habitats</a> <!-- lien ok -->
+                    <a href="/ZooArcadiaEcfProject/CODE/formulaire.php">Contact</a>         
+                    <a href="/ZooArcadiaEcfProject/CODE/connexion.php">Connexion</a>
                 </nav>
             </div>
-        <h1></h1>
-    </div> 

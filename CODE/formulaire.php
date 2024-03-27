@@ -1,6 +1,6 @@
 <?php
     // Code PHP
-    require_once("../Commun/init.php");
+    require_once("ProjetEcfZoo/Commun/init.php");
     // Si le formulaire est en methode post ->
     if($_POST){
         $count = $pdo->exec("INSERT INTO formulaire (nom, prenom, adresse_mail, sujet, description)
@@ -16,8 +16,8 @@
             echo"Envoie a la bdd reussi";
         }
     }
-    require_once("../Commun/haut_de_page.php");
-    require_once("../Commun/menu_general.php");
+    require_once("ProjetEcfZoo/Commun/haut_de_page.php");
+    require_once("ProjetEcfZoo/Commun/menu_general.php");
 ?>
 
 <h2></h2>  
@@ -47,5 +47,5 @@
     </form>
 
 <?php
-require_once("../Commun/bas_de_page.php");
+    require_once("ProjetEcfZoo/Commun/bas_de_page.php");
 ?>
