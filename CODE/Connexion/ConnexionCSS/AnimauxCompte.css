@@ -59,6 +59,8 @@
 }
 .main-stat2{
     text-align: center;
+    margin: 0 auto;
+    
 }
 .stat2 input{
     width: 90%;
